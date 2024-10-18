@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+.navbar{
+  height: 50px;
+  width: 100vw;
+  background-color: rgb(16, 16, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+.navbar #log{
+  background-color: #effafd;
+  position: absolute;
+  right: 150px;
+  color:  rgb(16, 16, 24);
+  padding: 3px;
+  font-weight: bold;
+}
+#login{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#login input{
+  border: solid black 1px;
+  height: 25px;
+  border-radius: 3px;
+}
+
+#login button{
+  height: 25px;
+  background-color: rgb(16, 16, 24);
+  color: white;
+  outline: none;
+}
+#name{
+  color: white;
+  position: absolute;
+  left: 10px;
+}
+.upload{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ 
