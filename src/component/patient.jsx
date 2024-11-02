@@ -2,8 +2,9 @@
 import React from 'react';
 import { auth } from '../config/firebase';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { Link } from 'react-router-dom';
 
-function Login({ setUser }) {
+function Patient({ setUser }) {
   const loginWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
     try {
@@ -32,8 +33,15 @@ function Login({ setUser }) {
       <input type='email' placeholder='Email' />
       <button type='submit'>Submit</button>
       <button onClick={loginWithGoogle}>Login with Google</button>
+      <div>
+      <span>not Registered?</span>
+      <Link to="/rigster">
+         <span>Create account</span>
+        </Link>
+        </div>
+
     </div>
   );
 }
 
-export default Login;
+export default Patient;
